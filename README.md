@@ -26,7 +26,7 @@ The Employment Management System (EMS) is a comprehensive application designed t
 - **Programming Language:** Java
 - **Framework:** Spring Boot
 - **Database:** MySQL
-- **Frontend:** Thymeleaf
+- **Frontend:** Thymeleaf, Bootstrap
 - **Build Tool:** Maven
 
 ## 📦 Installation
