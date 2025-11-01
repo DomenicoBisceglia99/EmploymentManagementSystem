@@ -10,8 +10,11 @@ public class Dipartimento {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idDipartimento;
+	@Column(nullable = false)
 	private String nomeDipartimento;
+	@Column(nullable = false)
 	private String localitaDipartimento;
+	@Column(nullable = false)
 	private String indirizzoDipartimento;
 	@OneToMany(mappedBy = "dipartimento", fetch = FetchType.LAZY)
 	private List<Dipendente> dipendenti;

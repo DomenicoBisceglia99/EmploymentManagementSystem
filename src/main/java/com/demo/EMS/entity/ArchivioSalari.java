@@ -10,10 +10,13 @@ public class ArchivioSalari {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idSalario;
-	
+	@Column(nullable = false)
 	private LocalDateTime dataEmissione;
+	@Column(nullable = false)
 	private LocalDateTime dataInizioVal;
+	@Column(nullable = false)
 	private LocalDateTime dataFineVal;
+	@Column(nullable = false)
 	private Double importo;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

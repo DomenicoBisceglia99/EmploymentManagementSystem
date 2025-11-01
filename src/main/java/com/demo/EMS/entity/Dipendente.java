@@ -48,13 +48,14 @@ public class Dipendente {
 
     public Dipendente() {}
     
-    public Dipendente (String nome, String cognome, String codiceFiscale, Date dataNascita, String telefono, String email) {
+    public Dipendente (String nome, String cognome, String codiceFiscale, Date dataNascita, String telefono, String email, Dipartimento dipartimento) {
     	this.nome = nome;
     	this.cognome = cognome;
     	this.codiceFiscale = codiceFiscale;
     	this.dataNascita = dataNascita;
     	this.telefono = telefono;
     	this.email = email;
+    	this.dipartimento = dipartimento;
     }
     
 	public Long getIdDipendente() {

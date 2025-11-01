@@ -13,8 +13,10 @@ public class ArchivioDocumenti {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idDocumento;
 	
+	@Column(nullable = false)
 	private LocalDateTime dataOraSalvataggio;
 	
+	@Column(nullable = false)
 	private TipoDocumento tipoDocumento;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

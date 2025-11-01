@@ -7,8 +7,9 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idUser;
-	
+	@Column(nullable = false, unique = true)
 	private String username;
+	@Column(nullable = false)
 	private String password;
 	
 	@OneToOne(mappedBy = "user", cascade = CascadeType.ALL)

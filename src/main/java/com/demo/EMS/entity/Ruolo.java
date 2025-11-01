@@ -11,6 +11,7 @@ public class Ruolo {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long idRuolo;
 	
+	@Column(nullable = false, unique = true)
 	private TipoRuolo tipoRuolo;
 	
 	@ManyToOne(fetch = FetchType.LAZY)

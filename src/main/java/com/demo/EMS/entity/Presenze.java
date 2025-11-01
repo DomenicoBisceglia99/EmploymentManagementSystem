@@ -11,7 +11,9 @@ public class Presenze {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_presenza")
 	private Long idPresenza;
+	@Column(nullable = false)
 	private LocalDateTime dataInizioTurno;
+	@Column(nullable = false)
 	private LocalDateTime dataFineTurno;
 	
 	@ManyToOne(fetch = FetchType.LAZY)
