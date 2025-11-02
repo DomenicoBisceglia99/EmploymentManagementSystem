@@ -16,6 +16,7 @@ public class ArchivioDocumenti {
 	@Column(nullable = false)
 	private LocalDateTime dataOraSalvataggio;
 	
+	@Enumerated(EnumType.STRING)
 	@Column(nullable = false)
 	private TipoDocumento tipoDocumento;
 	

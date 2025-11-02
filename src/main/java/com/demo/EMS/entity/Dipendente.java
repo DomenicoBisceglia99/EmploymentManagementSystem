@@ -37,8 +37,11 @@ public class Dipendente {
 	@JoinColumn(name="id_user")
 	private User user;
 	
-	@OneToMany(mappedBy = "dipendente", cascade = CascadeType.ALL)
-	private List<Ruolo> ruolo;
+//	@OneToMany(mappedBy = "dipendente", cascade = CascadeType.ALL)
+//	private List<Ruolo> ruolo;
+	@Enumerated(EnumType.STRING)
+	@Column(nullable = false)
+	private TipoRuolo ruolo;
 	
 	@OneToMany(mappedBy = "dipendente", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Presenze> presenze;
@@ -148,11 +151,12 @@ public class Dipendente {
 
 
 
-	public List<Ruolo> getRuolo() {
+
+	public TipoRuolo getRuolo() {
 		return ruolo;
 	}
 
-	public void setRuolo(List<Ruolo> ruolo) {
+	public void setRuolo(TipoRuolo ruolo) {
 		this.ruolo = ruolo;
 	}
 

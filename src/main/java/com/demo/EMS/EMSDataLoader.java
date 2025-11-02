@@ -8,7 +8,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import com.demo.EMS.entity.User;
-import com.demo.EMS.repository.*;
+import com.demo.EMS.repository.UserRepository;
+
 
 @Component
 public class EMSDataLoader implements CommandLineRunner{
@@ -28,8 +29,8 @@ public class EMSDataLoader implements CommandLineRunner{
 //			user.setPassword(passwordEncoder.encode("1234"));
 //			userRepository.save(user);
 //		}
-		
-	}
+		 
+	} 
 	
 
 }
